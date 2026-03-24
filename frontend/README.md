@@ -1,20 +1,93 @@
-# 🎨 Portfolio Frontend
+# 🎨 Ishu Yadav Portfolio — React Frontend
 
-Static HTML/CSS/JS portfolio — no build step needed.
+Modern portfolio website built with **React**, **Node.js**, and **CSS3**.
 
-## Run
+## 🚀 Quick Start
+
+### Requirements
+- Node.js >= 18.0.0
+- npm or yarn
+
+### Installation
+
+1. **Install dependencies:**
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. **Create `.env` file:**
+   ```bash
+   cp .env.example .env
+   ```
+
+3. **Configure environment variables** (optional):
+   - Set `REACT_APP_API_URL` to your backend URL
+   - Default: `http://localhost:5000/api`
+
+### Development
+
 ```bash
-npm install
 npm run dev
-# Opens at http://localhost:3000
+# or
+npm start
 ```
 
-## Customize
-- **Your photo** → add `public/images/ishu.jpg` and update `index.html`
-- **Resume** → find `downloadCV()` → replace with your PDF URL
-- **GitHub username** → search `ishuyadav` in `index.html` → replace
-- **Social links** → find `.h-socials` section → update `href`
-- **Backend URL** → find `const API = 'http://localhost:5000'` → update for production
+Opens [http://localhost:3000](http://localhost:3000) in the browser.
 
-## Deploy to Netlify
-Drag the `/public` folder to [app.netlify.com/drop](https://app.netlify.com/drop)
+### Production Build
+
+```bash
+npm run build
+```
+
+Creates optimized production build in `build/` folder.
+
+## 📁 Project Structure
+
+```
+frontend/
+├── src/
+│   ├── components/          # React components
+│   ├── styles/              # Component styles
+│   ├── utils/               # API utilities
+│   ├── App.jsx              # Main app component
+│   └── index.jsx            # Entry point
+├── public/
+│   └── index.html
+├── package.json
+└── .env.example
+```
+
+## 🔗 API Integration
+
+Connects to backend at: `http://localhost:5000/api`
+
+**Endpoints:**
+- `GET /api/projects` — All projects
+- `GET /api/blogs` — All blog posts
+- `GET /api/certs` — All certificates
+- `POST /api/contact` — Contact form submission
+- `GET /api/health` — Health check
+
+## 🎨 Features
+
+- ✨ Modern, animated UI
+- 🎯 Responsive design
+- 🌙 Dark theme with gradients
+- ⚡ Fast performance
+- 🔗 Integrated with backend
+
+## 🚀 Deployment
+
+### GitHub Pages
+Automatically deployed to: `https://ishurao.github.io/Portfolio/`
+
+### Vercel/Netlify
+1. Connect repository
+2. Build command: `npm run build`
+3. Output folder: `build`
+
+---
+
+**Built with React & Node.js**
