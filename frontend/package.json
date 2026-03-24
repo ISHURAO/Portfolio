@@ -1,0 +1,14 @@
+{
+  "name": "ishu-portfolio-frontend",
+  "version": "2.0.0",
+  "description": "Ishu Yadav Portfolio — Frontend",
+  "scripts": {
+    "dev": "serve public -p 3000 --cors",
+    "start": "serve public -p 3000 --cors",
+    "build": "echo 'Static site — no build needed. Deploy /public folder directly.'"
+  },
+  "dependencies": {
+    "node": "^25.8.1",
+    "serve": "^14.2.3"
+  }
+}
