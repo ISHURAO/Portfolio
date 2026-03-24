@@ -1,38 +1,13 @@
 {
   "name": "ishu-portfolio-frontend",
-  "version": "3.0.0",
-  "description": "Ishu Yadav Portfolio — React + Node",
-  "type": "module",
+  "version": "2.0.0",
+  "description": "Ishu Yadav Portfolio — Frontend",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "serve": "serve -s build -l 3000"
+    "dev": "serve public -p 3000 --cors",
+    "start": "serve public -p 3000 --cors",
+    "build": "echo 'Static site — no build needed. Deploy /public folder directly.'"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "axios": "^1.6.0",
-    "gsap": "^3.12.5"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "serve": "^14.2.3"
   }
 }
