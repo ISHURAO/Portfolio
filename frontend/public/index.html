@@ -175,6 +175,8 @@ section{position:relative;z-index:1;padding:7rem 8%}
 
 /* ══ HERO ══ */
 #hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:3rem;padding:0 8%;overflow:hidden}
+.h-btns{position:relative;z-index:20;pointer-events:auto}
+.btn-g,.btn-o{pointer-events:auto}
 .h-badge{display:inline-flex;align-items:center;gap:.6rem;padding:.38rem 1.1rem;border-radius:100px;
   background:rgba(0,210,255,.06);border:1px solid rgba(0,210,255,.2);
   font-family:var(--ff-m);font-size:.72rem;color:var(--c1);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.8rem}
@@ -676,7 +678,7 @@ footer span{color:var(--c1)}
     <p class="h-role">Full Stack Developer &amp; Problem Solver</p>
     <div class="h-typing"><span id="typed"></span><span class="blink"></span></div>
     <div class="h-btns">
-      <a class="btn-g" href="#projects" onclick="alert('View Projects clicked')">View Projects</a>
+      <a class="btn-g" href="#projects" onclick="event.preventDefault(); const sec=document.getElementById('projects'); if(sec){sec.scrollIntoView({behavior:'smooth'}); alert('View Projects clicked')} else {alert('Projects section missing');}">View Projects</a>
       <a class="btn-o" href="https://drive.google.com/file/d/1wnfVtLwhYOTWDSdvyIdOuXf2M-MoCNZo/view?usp=sharing" target="_blank" rel="noopener" onclick="alert('Download Resume clicked')">Download Resume ↓</a>
     </div>
     <div class="h-socials">
